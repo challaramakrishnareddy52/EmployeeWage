@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EmployeeWage
+﻿namespace EmployeeWage
 {
-        public class CompanyEmpWage
+    public class CompanyEmpWage
         {
             public string company;
             public int empRatePerHour;
