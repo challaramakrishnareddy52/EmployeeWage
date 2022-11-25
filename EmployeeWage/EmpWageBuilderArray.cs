@@ -8,7 +8,7 @@ namespace EmployeeWage
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
-        ArrayList listObj = new ArrayList();    //using ArrayList instead of Array.
+        List<CompanyEmpWage> listObj = new List<CompanyEmpWage>();
         private CompanyEmpWage companyEmpWageObj;
         public void AddCompanyEmpWage(string company, int empRateperHour, int numOfWorkingDays, int maxHoursPermonth)
         {
@@ -45,6 +45,7 @@ namespace EmployeeWage
                         break;
                 }
                 totalEmpHrs += empHrs;
+                int wageUpToDate = totalEmpHrs * companyEmpWage.empRatePerHour;
                 Console.WriteLine("Days#:" + totalWorkingDays + "Emp Hrs : " + empHrs);
             }
             return totalEmpHrs * companyEmpWage.empRatePerHour;
